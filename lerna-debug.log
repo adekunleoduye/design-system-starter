@@ -1,0 +1,13 @@
+0 silly argv { _: [ 'create' ],
+0 silly argv   lernaVersion: '3.22.0',
+0 silly argv   '$0': '/Users/adekunleoduye/.npm-global/bin/lerna',
+0 silly argv   name: '@dss-badge' }
+1 notice cli v3.22.0
+2 verbose rootPath /Users/adekunleoduye/Projects/design-system-starter
+3 info versioning independent
+4 error Error: Invalid tag name "@dss-badge": Tags may not have any characters that encodeURIComponent encodes.
+4 error     at invalidTagName (/Users/adekunleoduye/.npm-global/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:91:15)
+4 error     at fromRegistry (/Users/adekunleoduye/.npm-global/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:296:13)
+4 error     at resolve (/Users/adekunleoduye/.npm-global/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:81:12)
+4 error     at npa (/Users/adekunleoduye/.npm-global/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:52:10)
+4 error     at CreateCommand.initialize (/Users/adekunleoduye/.npm-global/lib/node_modules/lerna/node_modules/@lerna/create/index.js:54:29)

@@ -1,0 +1,25 @@
+{
+  "name": "design-system-starter",
+  "version": "1.0.0",
+  "description": "A design system starter using Storybook and Gatsby.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adekunleoduye/design-system-starter.git"
+  },
+  "keywords": [
+    "design system"
+  ],
+  "author": "Adekunle Oduye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adekunleoduye/design-system-starter/issues"
+  },
+  "homepage": "https://github.com/adekunleoduye/design-system-starter#readme",
+  "devDependencies": {
+    "lerna": "^3.22.0"
+  }
+}

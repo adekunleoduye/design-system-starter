@@ -1,0 +1,32 @@
+@import "./colors";
+
+:root {
+  --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --fs-base: 1rem;
+  --fs-m: 1.125rem;
+  --fs-l: 1.5rem;
+  --fs-xl: 2rem;
+  --fs-xxl: 4rem;
+  --fw-heavy: 300;
+  --fw-heavier: 400;
+  --fw-heaviest: 600;
+  --bp-sm: 20rem;
+  --bp-med: 36rem;
+  --bp-lg: 51.5rem;
+  --bp-xl: 67rem;
+  --bp-xxl: 82.5rem;
+  --lh-loose: 1.2;
+  --lh-base: 1.5;
+  --spacing-none: 0;
+  --spacing-tighter: 0.25rem;
+  --spacing-tight: 0.5rem;
+  --spacing-base: 1rem;
+  --spacing-loose: 2rem;
+  --spacing-looser: 3rem;
+  --fade-timing-base: 0.3s;
+  --fade-timing-quick: 0.15s;
+  --fade-timing-long: 0.4s;
+  --animation-ease-base: ease-in-out;
+  --border-radius-base: 2px;
+}
