@@ -1,0 +1,33 @@
+@use '../../../../styles/tokens.scss';
+
+  
+.button-reset {
+  overflow: hidden;
+  border: 0 none;
+  background: none;
+  border-radius: 0;
+  white-space: nowrap;
+  margin: 0;
+}
+
+// Layout
+.navWrapper {
+  // background-color: var(--bg-lv1);
+  overflow-x: hidden;
+  height: 100%;
+  position: fixed;
+  width: 296px;
+}
+
+.nav {
+  // display: grid;
+  // grid-template-columns: var(--spacing-base)  auto;
+
+
+}
+
+
+.navGroup {
+  @extend .button-reset;
+}
+

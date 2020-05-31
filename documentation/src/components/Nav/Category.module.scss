@@ -1,0 +1,58 @@
+@use '../../../../styles/tokens.scss';
+
+  
+.button-reset {
+  overflow: hidden;
+  border: 0 none;
+  background: none;
+  border-radius: 0;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.root {
+  @extend .button-reset;
+  width: 100%;
+
+  &.isOpen {
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.button {
+  border: 0;
+  background: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: .75rem 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.label {
+  text-align: left;
+}
+
+.linkGroup {
+  @extend .button-reset;
+  margin-left: .8em;
+  border-left: 1px solid #bdbdbd;
+}
+
+.linkItem {
+  padding: .75rem 1rem;
+}
+
+.categoryLink {
+  color: #000;
+  font-weight: 400;
+}
+
+.categoryLinkActive {
+  background-color: #cfedff;
+    font-weight: 500;
+}

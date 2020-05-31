@@ -4,7 +4,11 @@
   "description": "A design system starter using Storybook and Gatsby.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "cd documentation && npm run develop",
+    "docs:clean": "cd documentation && npm run clean",
+    "storybook": "cd storybook && npm run storybook -p 6006 --ci",
+    "build-storybook": "cd storybook && build-storybook"
   },
   "repository": {
     "type": "git",
@@ -20,6 +24,19 @@
   },
   "homepage": "https://github.com/adekunleoduye/design-system-starter#readme",
   "devDependencies": {
-    "lerna": "^3.22.0"
+    "classnames": "^2.2.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "css-loader": "^3.5.3",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "svg-icon": "^0.8.2"
   }
 }
