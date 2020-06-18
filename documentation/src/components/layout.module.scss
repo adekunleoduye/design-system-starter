@@ -199,8 +199,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: var(--gray900);
+  font-family: var(--font-base);
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -621,12 +621,11 @@ pre tt:after {
   }
 }
 
-// 
+//
 
 .root {
   display: grid;
   grid-template-columns: 1fr;
-  
 }
 
 .mainContent {

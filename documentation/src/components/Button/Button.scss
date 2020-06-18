@@ -1,0 +1,106 @@
+@import "../../../../styles/tokens.scss";
+
+/* 
+ *
+ * Button Structure
+ *
+ */
+
+.btn {
+  border: none;
+  border-radius: var(--border-radius-base);
+  cursor: pointer;
+  font-size: 13px; // Here for temporary - AO
+  justify-content: center;
+  outline-color: var(--blue100);
+  display: inline;
+  font-weight: 500;
+
+  // Space for icon
+  .btn-icon {
+    padding-right: var(--spacing-tight);
+  }
+
+  // Disabled styles
+  &:disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+/* 
+ *
+ * Button Styles
+ *
+ */
+
+//  Primary button
+.btn-primary {
+  background-color: var(--blue500);
+  color: var(--white500);
+  transition: background-color 0.25s ease-in-out;
+
+  &:hover:not([disabled]),
+  :active:not([disabled]) {
+    background-color: var(--blue550);
+  }
+}
+
+//  Secondary button
+.btn-secondary {
+  background-color: var(--gray800);
+  color: var(--white500);
+  transition: border-color 0.25s ease-in-out, color 0.25s ease-in-out;
+
+  &:hover:not([disabled]),
+  :active:not([disabled]) {
+    background-color: var(--gray700);
+  }
+}
+
+//  Link button
+.btn-link {
+  background-color: transparent;
+  color: var(--blue500);
+  transition: background-color 0.25s ease-in-out;
+
+  &:hover:not([disabled]),
+  :active:not([disabled]) {
+    background-color: var(--blue100);
+  }
+}
+
+//  Danger button
+.btn-danger {
+  background-color: var(--red500);
+  color: var(--white500);
+  transition: background-color 0.25s ease-in-out;
+
+  &:hover:not([disabled]),
+  :active:not([disabled]) {
+    background-color: var(--red600);
+  }
+}
+
+/* 
+ *
+ * Button Sizes
+ *
+ */
+
+.btn-small {
+}
+
+.btn-large {
+  padding: var(--spacing-tight);
+}
+
+/*
+ *
+ * Helpers
+ *
+ */
+.btn-fluid {
+  width: 100%;
+}

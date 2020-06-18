@@ -39,6 +39,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: "gatsby-transformer-react-docgen",
+      options: {
+        babelrcRoots: ["../components/*"],
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,

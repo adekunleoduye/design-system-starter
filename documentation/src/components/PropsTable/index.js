@@ -1,0 +1,1 @@
+export { PropsTable as default } from './PropsTable';

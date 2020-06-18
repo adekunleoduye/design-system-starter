@@ -50,7 +50,7 @@ const Category = ({ children, label, id, defaultOpen = false, ...rest }) => {
 };
 
 const CategoryLink = ({ children, to }) => {
-  const activeStyles = [styles.categoryLinkActive];
+  const activeStyles = cx(styles.categoryLink, styles.isActive);
 
   return (
     <li className={styles.linkItem}>

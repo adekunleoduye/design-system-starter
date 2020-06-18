@@ -47,6 +47,8 @@ exports.createPages = ({ graphql, actions }) => {
          * Create a page for each mdx file
         */
         result.data.allMdx.edges.forEach(({ node }) => {
+          if(node.frontmatter.path === null) return;
+          
           createPage({
             // Path for component docs
             path: node.frontmatter.path,

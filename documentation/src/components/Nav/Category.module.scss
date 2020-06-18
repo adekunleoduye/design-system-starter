@@ -1,6 +1,5 @@
 @use '../../../../styles/tokens.scss';
 
-  
 .button-reset {
   overflow: hidden;
   border: 0 none;
@@ -27,7 +26,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr auto;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   color: #000;
   font-weight: 400;
@@ -39,20 +38,30 @@
 
 .linkGroup {
   @extend .button-reset;
-  margin-left: .8em;
-  border-left: 1px solid #bdbdbd;
+  margin-left: 0.8em;
 }
 
 .linkItem {
-  padding: .75rem 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 .categoryLink {
-  color: #000;
   font-weight: 400;
-}
+  border-left: 2px solid var(--gray200);
+  padding: 0.75rem 1rem;
+  display: block;
+  color: var(--gray900);
+  text-decoration: none;
 
-.categoryLinkActive {
-  background-color: #cfedff;
-    font-weight: 500;
+  &:hover {
+    background-color: #efeeea;
+  }
+
+  &:active {
+  }
+
+  &.isActive {
+    border-left: 2px solid var(--blue400);
+  }
 }

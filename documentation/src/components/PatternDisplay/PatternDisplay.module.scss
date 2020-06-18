@@ -1,0 +1,7 @@
+@import "../../../../styles/tokens.scss";
+
+.root {
+  padding: var(--spacing-loose);
+  border: 1px solid var(--gray200);
+  display: inline-block;
+}

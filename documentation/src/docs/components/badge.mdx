@@ -7,7 +7,20 @@ keywords:
   - "components"
   - "patterns"
 ---
-<!-- 
-import Badge from '../components/Badge";
 
-<Badge>Hey<Badge> -->
+import Badge from "components/Badge";
+import PropsTable from "components/PropsTable";
+import PatternDisplay from "components/PatternDisplay";
+
+## Purpose
+
+A badge highlights relevant qualities of associated content which are actionless.
+
+<PatternDisplay>
+  <Badge>Default</Badge>
+  <Badge type="error">Error</Badge>
+  <Badge type="caution">Caution</Badge>
+  <Badge type="info">Info</Badge>
+</PatternDisplay>
+
+<PropsTable of="Badge" />

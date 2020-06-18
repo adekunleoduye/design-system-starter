@@ -1,6 +1,5 @@
 @use '../../../../styles/tokens.scss';
 
-  
 .button-reset {
   overflow: hidden;
   border: 0 none;
@@ -17,17 +16,25 @@
   height: 100%;
   position: fixed;
   width: 296px;
+  background-color: var(--gray50);
 }
 
 .nav {
   // display: grid;
   // grid-template-columns: var(--spacing-base)  auto;
-
-
 }
 
+.navGroup {
+  padding-top: 1rem;
+}
+
+.name {
+  text-decoration: none;
+  color: var(--gray900);
+  font-weight: bold;
+  padding-left: 1rem;
+}
 
 .navGroup {
   @extend .button-reset;
 }
-
