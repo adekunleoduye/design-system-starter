@@ -15,7 +15,7 @@
   overflow-x: hidden;
   height: 100%;
   position: fixed;
-  width: 296px;
+  width: var(--nav-width);
   background-color: var(--gray50);
 }
 

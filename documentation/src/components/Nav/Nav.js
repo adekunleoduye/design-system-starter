@@ -44,6 +44,9 @@ const Nav = () => {
               label="Components"
               defaultOpen={location.pathname.startsWith('/components')}
               >
+              <CategoryLink to="/components/component-status">
+                Component Status
+              </CategoryLink>
               
               {allMdx.edges.map((doc, i) => {
                 const title = doc.node.frontmatter.title;
@@ -55,6 +58,16 @@ const Nav = () => {
                   </CategoryLink>
                 )
               })}
+            </Category>
+          </li>
+          <li className={styles.navItem}>
+            <Category
+              label="What's New"
+              defaultOpen={location.pathname.startsWith('/whats-new')}
+              >
+              <CategoryLink to="/whats-new/changelog">
+                Changelog
+              </CategoryLink>
             </Category>
           </li>
         </ul>
