@@ -1,0 +1,1 @@
+export {StatusTable as default} from './StatusTable'
