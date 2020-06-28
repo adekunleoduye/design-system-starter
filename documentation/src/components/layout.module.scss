@@ -1,3 +1,7 @@
+.root {
+  --nav-width: 240px;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -39,9 +43,13 @@ progress {
 template {
   display: none;
 }
+p {
+  max-width: var(--readable-max-width);
+}
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: var(--blue500);
 }
 a:active,
 a:hover {
@@ -628,12 +636,12 @@ pre tt:after {
   grid-template-columns: 1fr;
 }
 
-.mainContent {
-  padding: 1rem 2rem;
-  min-height: 90vh;
-  max-width: 960px;
-  margin: auto;
+.container {
+  margin-left: var(--nav-width);
+  padding: var(--spacing-loosest);
   box-sizing: content-box;
-  margin-left: 296px;
-  width: 100%;
+}
+
+.mainContainer {
+  min-height: 90vh;
 }

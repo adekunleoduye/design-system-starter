@@ -11,8 +11,10 @@ const Layout = ({ children }) => {
   return (
       <div className={styles.root}>
         <Nav />
-        <div className={styles.mainContent}>
-          <main>{children}</main>
+        <div className={styles.container}>
+          <div className={styles.mainContainer}>
+            <main>{children}</main>
+          </div>
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
