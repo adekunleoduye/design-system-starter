@@ -1,7 +1,7 @@
 :root {
   --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --fs-s: 0.8rem;
+  --fs-s: 0.88rem;
   --fs-base: 1rem;
   --fs-m: 1.125rem;
   --fs-l: 1.5rem;
@@ -23,6 +23,7 @@
   --spacing-base: 1rem;
   --spacing-loose: 2rem;
   --spacing-looser: 3rem;
+  --spacing-loosest: 4rem;
   --fade-timing-base: 0.3s;
   --fade-timing-quick: 0.15s;
   --fade-timing-long: 0.4s;
@@ -48,7 +49,7 @@
   --blue550: #005ec5;
   --blue600: #435a67;
   --red50: #fcf8f8;
-  --red100: #f8dede;
+  --red100: #ffe4e9;
   --red200: #fd6275;
   --red500: #e5153e;
   --red600: #a14a5c;
@@ -61,4 +62,5 @@
   --green200: #b8f0e1;
   --green400: #38adb6;
   --green500: #3d7104;
+  --readable-max-width: 25rem;
 }
