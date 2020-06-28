@@ -34,6 +34,8 @@
 
 .label {
   text-align: left;
+  font-size: var(--fs-s);
+  color: var(--gray600);
 }
 
 .linkGroup {
@@ -53,15 +55,15 @@
   display: block;
   color: var(--gray900);
   text-decoration: none;
+  font-size: var(--fs-s);
 
   &:hover {
-    background-color: #efeeea;
-  }
-
-  &:active {
+    background-color: var(--white500);
   }
 
   &.isActive {
     border-left: 2px solid var(--blue400);
+    background-color: var(--gray100);
+    font-weight: var(--fw-heaviest);
   }
 }
