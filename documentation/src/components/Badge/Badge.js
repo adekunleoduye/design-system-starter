@@ -11,7 +11,7 @@ const Badge = ({children, type="default"}) => {
 
 Badge.propTypes = {
   /** Description of prop type. */
-  type: PropTypes.oneOf(['error','caution','info','default']),
+  type: PropTypes.oneOf(['error','caution','info','default', 'success']),
   /** Description of prop children. */
   children: PropTypes.node,
 };

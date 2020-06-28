@@ -1,17 +1,20 @@
 @import "../../../../styles/tokens.scss";
 
 :root {
-  --bg-color-error: var(--red500);
-  --text-color-error: var(--white500);
+  --bg-color-error: var(--red100);
+  --text-color-error: var(--gray650);
 
-  --bg-color-caution: var(--yellow500);
-  --text-color-caution: var(--black500);
+  --bg-color-caution: var(--yellow100);
+  --text-color-caution: var(--gray650);
 
   --bg-color-info: var(--blue100);
-  --text-color-info: var(--gray500);
+  --text-color-info: var(--gray650);
+
+  --bg-color-success: var(--green150);
+  --text-color-success: var(--gray650);
 
   --bg-color: var(--gray100);
-  --text-color: var(--gray500);
+  --text-color: var(--gray650);
 }
 
 .badge {
@@ -26,6 +29,7 @@
   font-weight: var(--fw-heavier);
   background-color: var(--bg-color);
   color: var(--text-color);
+  font-weight: var(--fw-heaviest);
 
   &--error {
     --bg-color: var(--bg-color-error);
@@ -38,5 +42,9 @@
   &--info {
     --bg-color: var(--bg-color-info);
     --text-color: var(--text-color-info);
+  }
+  &--success {
+    --bg-color: var(--bg-color-success);
+    --text-color: var(--text-color-success);
   }
 }
