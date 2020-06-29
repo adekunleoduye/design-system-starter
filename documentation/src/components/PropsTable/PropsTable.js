@@ -43,10 +43,10 @@ export const PropsTable = (props) => {
       return node.displayName === props.of;
     });
 
-    if (result) {
-      return result.node;
-    }
-    return null;
+    // Return null if no results
+    if (!result) return null;
+
+    return result.node;
   };
 
   // Variable to get all the props
@@ -54,8 +54,6 @@ export const PropsTable = (props) => {
 
   // Table row callback function
   const propItem = (prop) => {
-
-    console.log(prop);
     // Getting the component values
     const cpnName = prop.name;
     const cpnType = prop.type.name;
