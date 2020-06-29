@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import PropTypes from 'prop-types';
-import { removeSpaces, toTitleCase } from 'utils';
+import { toTitleCase } from 'utils';
 
 
 import styles from './StatusTable.module.scss';
@@ -57,8 +56,6 @@ export const StatusTable = () => {
       const isComponentDocAvailable =
         componentName.toLowerCase() === componentDocTitle;
       
-      console.log({componentName,componentDocTitle});
-
       return isComponentDocAvailable;
     }).map((componentDoc) => componentDoc.node.frontmatter.path);
 
@@ -67,7 +64,6 @@ export const StatusTable = () => {
 
   const renderComponentName = (componentName) => {
     const isUrlAvailable = setComponentUrl(componentName).length > 0;
-    console.log({componentName});
 
     return isUrlAvailable ? (
       <Link to={setComponentUrl(componentName)[0]}>{componentName}</Link>
@@ -86,21 +82,17 @@ export const StatusTable = () => {
       }
 
       return (
-        <tr key={component.name} className="statusTable-componentRow">
-          <td className="componentRow-name">
+        <tr key={component.name}>
+          <td>
             {renderComponentName(component.name)}
           </td>
-          <td
-            className="componentRow-status"
-          >
+          <td>
             {component.lastUpdated}
           </td>
 
-          <td
-            className="componentRow-status"
-          >
+          <td>
             <Badge type={STATUS_BADGE[component.status]}> 
-      {(component.status === 'development' || component.status ===  'design') ? `In ${component.status}` : toTitleCase(component.status)}
+              {(component.status === 'development' || component.status ===  'design') ? `In ${component.status}` : toTitleCase(component.status)}
             </Badge>
           </td>
         </tr>
@@ -108,9 +100,9 @@ export const StatusTable = () => {
     });
 
   return (
-    <table className="statusTable">
+    <table className={styles.root}>
       <tbody>
-        <tr className="statusTable-headerRow">
+        <tr>
           <th>Component</th>
           <th>Last Updated</th>
           <th>Status</th>
